@@ -2,12 +2,34 @@
 <html>
 	<head>
 		<title>{% block title %}Ryan Weber Development{% endblock %}</title>
-		{% block stylesheets %}{% endblock %}
+		{% block stylesheets %}
+			<link rel="stylesheet" type="text/css" href="/ryanweber/public_html/css/vendors/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="/ryanweber/public_html/css/vendors/bootstrap-responsive.min.css">
+			<link rel="stylesheet" type="text/css" href="/ryanweber/public_html/css/app.css">
+		{% endblock %}
 		{% block scripts %}
 			<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.1/jquery.min.js'></script>
+			<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
+			<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js'></script>
 		{% endblock %}
 	</head>
 	<body>
+		{% block header %}
+			<div class='header'>
+				<div class='logo'></div>
+				<div class="navbar">
+					<div class="navbar-inner">
+						<a class="brand main-title" href="#">Ryan Weber</a>
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href='#'>Work</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		{% endblock %}
 		{% block content %}{% endblock %}
 	</body>
 </html>

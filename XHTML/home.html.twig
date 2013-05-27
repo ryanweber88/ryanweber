@@ -3,15 +3,20 @@
 {% block title %}Ryan Weber | Home{% endblock %}
 {% block scripts %}
 {{ parent() }}
-<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
+{% endblock %}
+{% block header %}
+{{ parent() }}
 {% endblock %}
 {% block content %}
 	<div class='main-content'>
 		<div class='content'>
 			<div class='splash'>
-				TESTER!
-				{% set new_name='COOLMAN' %}
-				{{ new_name }}
+				{#
+					TESTER!
+					{% set new_name='COOLMAN' %}
+					{{ new_name }}
+				#}
+
 			</div>
 		</div>
 	</div>

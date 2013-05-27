@@ -1,0 +1,21 @@
+body .header .logo {
+  display: none;
+  width: 300px;
+  height: 160px;
+  border: 1px solid #ddd;
+  background: #eee; }
+body .header .navbar {
+  margin-bottom: 0 !important;
+  position: relative;
+  z-index: 9999;
+  text-align: center; }
+  body .header .navbar .navbar-inner .main-title {
+    font-weight: bold; }
+body .content {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-top: 0;
+  min-height: 100px;
+  box-shadow: 0 0.1px 15px 1px #777777;
+  z-index: 10; }
